@@ -16,7 +16,7 @@ after_success:
 
     - echo "$DOCKER_PASSOWRD" | docker login -u "$DOCKER_ID" --password-stdin
 
-    -docker push orangeball/multi-client
-    -docker push orangeball/multi-nginx
-    -docker push orangeball/multi-server
-    -docker push orangeball/multi-worker
+    - docker push orangeball/multi-client
+    - docker push orangeball/multi-nginx
+    - docker push orangeball/multi-server
+    - docker push orangeball/multi-worker
